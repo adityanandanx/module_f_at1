@@ -29,8 +29,8 @@ const tts = () => {
     </div>
     <div class="">
       <h2 class="font-bold text-5xl text-center mb-10">Latest Events</h2>
-      <div class="border overflow-scroll border-gray-500 rounded-md w-full">
-        <div class="flex w-fit p-5">
+      <div class="border overflow-x-scroll border-gray-500 rounded-md w-full">
+        <div class="flex w-fit p-5 gap-5">
           <Card
             class="w-64"
             caption="Lyon accueille la finale mondiale des Worldskills 2024"

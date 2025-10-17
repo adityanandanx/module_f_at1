@@ -27,7 +27,9 @@ const data = [
         <button
           class="px-5 py-2 bg-gray-300 cursor-pointer"
           @click="selected = i"
-          :class="{ 'bg-white border-b-2 border-blue-500': selected === i }"
+          :style="{
+            borderBottom: selected === i ? '2px solid #3293f4' : '2px solid #d1d5dc',
+          }"
           v-for="(tab, i) in data"
         >
           {{ tab.label }}
