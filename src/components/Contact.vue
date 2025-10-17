@@ -6,22 +6,42 @@
       >
         Contact Us
       </h2>
-      <form class="grid grid-cols-2 gap-6 p-10 pt-0">
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-6 p-10 pt-0">
         <div class="flex gap-3">
           <label for="fname">First Name</label>
-          <input type="text" name="fname" id="fname" class="border border-gray-400 flex-1" />
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            class="border border-gray-400 flex-1 rounded"
+          />
         </div>
         <div class="flex gap-3">
           <label for="lname">Last Name</label>
-          <input type="text" name="lname" id="lname" class="border border-gray-400 flex-1" />
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            class="border border-gray-400 flex-1 rounded"
+          />
         </div>
         <div class="flex gap-3">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" class="border border-gray-400 flex-1" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="border border-gray-400 flex-1 rounded"
+          />
         </div>
         <div class="flex gap-3">
           <label for="phone">Phone</label>
-          <input type="text" name="phone" id="phone" class="border border-gray-400 flex-1" />
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            class="border border-gray-400 flex-1 rounded"
+          />
         </div>
       </form>
     </div>
