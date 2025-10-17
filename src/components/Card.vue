@@ -12,11 +12,9 @@ defineProps({
       <img :src="srcHigh" :alt="caption" class="w-full object-cover" />
     </picture>
     <span class="shine" aria-hidden></span>
-    <caption class="w-full text-left">
-      {{
-        caption
-      }}
-    </caption>
+    <span class="w-full text-left">
+      {{ caption }}
+    </span>
   </div>
 </template>
 
