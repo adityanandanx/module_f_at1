@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+
+a {
+  color: blue;
+}
+h2 {
+  letter-spacing: -4px;
+}
