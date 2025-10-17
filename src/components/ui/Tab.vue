@@ -6,9 +6,10 @@ defineProps<{ data: { label: string; content: string }[] }>()
 </script>
 
 <template>
-  <div class="border-b border-gray-300">
+  <div role="tablist" class="border-b border-gray-300">
     <button
       class="px-5 py-2 bg-gray-300 cursor-pointer"
+      role="tab"
       @click="selected = i"
       :style="{
         borderBottom: selected === i ? '2px solid #3293f4' : '2px solid #d1d5dc',
@@ -16,6 +17,7 @@ defineProps<{ data: { label: string; content: string }[] }>()
       }"
       v-for="(tab, i) in data"
       :aria-selected="selected === i"
+      :aria-controls="tab.label + ' panel'"
       :id="tab.label"
     >
       {{ tab.label }}
@@ -23,6 +25,8 @@ defineProps<{ data: { label: string; content: string }[] }>()
   </div>
   <div
     v-for="(tab, i) in data"
+    role="tabpanel"
+    :id="tab.label + ' panel'"
     class="px-10 py-5"
     :style="{ display: selected !== i ? 'none' : 'block' }"
     :aria-hidden="selected !== i"
