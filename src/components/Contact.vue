@@ -1,6 +1,6 @@
 <template>
   <section class="container max-w-screen-xl mx-auto my-20">
-    <div class="px-10 space-y-3 border border-gray-400">
+    <div class="px-4 md:px-10 space-y-3 border border-gray-400">
       <h2
         class="font-bold text-5xl text-center mb-10 mx-auto border w-fit border-gray-400 px-10 py-3 -translate-y-1/2 bg-white"
       >
