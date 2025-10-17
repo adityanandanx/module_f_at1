@@ -34,7 +34,9 @@ onUnmounted(() => {
     class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 overflow-hidden p-2 rounded-lg"
   >
     <span ref="light" class="light -z-10" aria-hidden></span>
-    <button class="cta px-20 py-10 overflow-hidden bg-gray-300 rounded-md">
+    <button
+      class="cta px-20 py-10 overflow-hidden bg-gray-300 rounded-md hover:scale-105 transition-transform"
+    >
       <span ref="inlight" class="inlight" aria-hidden></span>
       Call to Action
     </button>
